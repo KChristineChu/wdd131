@@ -1,0 +1,47 @@
+.parent{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header{
+    padding: 10px;
+    grid-column: 1/5;
+    background-color:aquamarine
+}
+
+h3{
+    color:aliceblue;
+}
+
+nav{
+    background-color: rgb(184, 208, 184);
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navigation lo{
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color:blue;
+    padding: 5px;
+    text-align: center;
+}
+.main{
+    grid-column: 1/4;
+    background-color: bisque;
+}
+.aside{
+    grid-column: 4/5;
+    background-color: burlywood;
+}
+.footer{
+    grid-column: 1/5;
+    background-color: aqua;
+}
