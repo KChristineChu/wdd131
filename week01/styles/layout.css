@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 4fr 2fr;
+    grid-template-rows: 2fr 4fr 2fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -17,8 +17,8 @@
 
 
 nav {
-    grid-column: 1/5;
-    grid-row: 2/3;
+    
+    padding: 8px;
     background-color: rgb(184, 208, 184);
 
 }
@@ -33,25 +33,25 @@ nav {
 .navigation a {
     color: blue;
     text-align: center;
-    
+
 }
 
 .main {
     grid-column: 1/4;
-    grid-row: 3/4;
+    grid-row: 2/3;
     background-color: bisque;
 }
 
 .aside {
     display: block;
     grid-column: 4/5;
-    grid-row: 3/4;
+    grid-row: 2/3;
     background-color: burlywood;
 }
 
 .footer {
     grid-column: 1/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
     background-color: aqua;
     color: aliceblue;
     text-align: center;
