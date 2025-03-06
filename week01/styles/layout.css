@@ -25,16 +25,12 @@ nav {
 
 .navigation {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.navigation lo {
-    flex: 1 1 auto;
-}
-
 .navigation a {
-    display: block;
     color: blue;
     padding: 5px;
     text-align: center;
@@ -47,6 +43,7 @@ nav {
 }
 
 .aside {
+    display: block;
     grid-column: 4/5;
     grid-row: 3/4;
     background-color: burlywood;
