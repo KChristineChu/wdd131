@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Christine Chu</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Christine Chu, Home" </head>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Christine Chu, Home">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 
 <body>
-    <div class="parent">
-        <header class="header">
-            <h1>WDD 131: Dynamic Web Fundamentals - </h1>
-            <h2>Christine Chu</h2>
 
-            <nav class="nav">
-                <a href="https://www.linkedin.com/">Linkedin</a>
-                <a href="https://byupw.instructure.com/">Canvas</a>
-                <a
-                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=eng&id=23#p23">Scripture</a>
-                <a href="#">Final Project</a>
-            </nav>
-        </header>
+    <header class="header">
+        <h1>WDD 131: Dynamic Web Fundamentals - </h1>
+        <h2>Christine Chu</h2>
 
-        <main>
+        <nav class="nav">
+            <a href="https://www.linkedin.com/">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=eng&id=23#p23">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
 
-            <section class="card">
-                <h3>About Me</h3>
+    <main>
+        <section class="card">
+            <h3>About Me</h3>
 
-                <p class="top">
-                    <img src="images/self-protrait.jpg" alt="self protrait">
-                    My name is Christine Chu. I was born and raised in Hong Kong. I have lived in the United States
-                    for many years. Some of the states I have lived were Hawaii, Rhode Island, Ohio, Georgia and
-                    Utah. I am currently studying for Web Development. I love spending time with my family. I
-                    also
-                    like hiking, yoga and learning new things.
+            <p class="top">
+                <img src="images/self-protrait.jpg" alt="self protrait">
+                My name is Christine Chu. I was born and raised in Hong Kong. I have lived in the United States
+                for many years. Some of the states I have lived were Hawaii, Rhode Island, Ohio, Georgia and
+                Utah. I am currently studying for Web Development. I love spending time with my family. I
+                also
+                like hiking, yoga and learning new things.
+            </p>
 
-                </p>
-                <h2 class="bold">Hong Kong</h2>
-                <p class="bottom">
+            <h2 class="bold">Hong Kong</h2>
 
-                    <img src="images/Flag-Hong-Kong-China.jpg" alt="Hong Kong Flag">
+            <p class="bottom">
+                <img src="images/Flag-Hong-Kong-China.jpg" alt="Hong Kong Flag">
+                Hong Kong is a city with a high population. There are skyscrapers everywhere to accomodate the
+                population. There is hardly any countryside. However, at night, with the lights of the buildings
+                are turned on, the city becomes a treasure island. It has
+                gotten a nickname of the Pearls of Orient.
+            </p>
+        </section>
 
-                    Hong Kong is a city with a high population. There are skyscrapers everywhere to accomodate the
-                    population. There is hardly any countryside. However, at night, with the lights of the buildings
-                    are turned on, the city becomes a treasure island. It has
-                    gotten a nickname of the Pearls of Orient.
-                </p>
-            </section>
+        <section class="card">
+            <h3>Web Dev Resources</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US">MDN Web Docs</a></li>
+                <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>
+                <li><a href="codecademy.com">Codecademy</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
 
-            <section class="card">
-                <h3>Web Dev Resources</h3>
-                <ul>
-                    <li><a href="https://www.w3schools.com">W3 Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US">MDN Web Docs</a></li>
-                    <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>
-                    <li>Learndev</li>
-                    <li><a href="https://www.udemy.com">Udemy</a></li>
-                </ul>
-            </section>
+    <footer class="footer">
+        <p>©<span id="currently"></span>🌾Christine Chu🌾 Hong Kong</p>
+        <p id="lastModified">Last Modification: </p>
 
-        </main>
+    </footer>
 
-
-        <footer class="footer">
-            <p>©<span id="currently"></span>🌾Christine Chu🌾 Hong Kong</p>
-            <p id="lastModified"></p>
-        </footer>
-    </div>
 </body>
 
 </html>

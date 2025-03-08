@@ -1,11 +1,8 @@
 .header {
     margin: 0;
     padding: 0;
-    /*grid-column: 1/4;
-    grid-row: 1/2;*/
     background-color: cornflowerblue;
     text-align: center;
-
 }
 
 h1 {
@@ -23,9 +20,10 @@ h2 {
 }
 
 .bold {
-    color: rgb(105, 64, 64);
+    color: rgb(187, 38, 38);
     font-weight: bold;
-    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 0;
 
 }
 
@@ -34,7 +32,7 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    padding: 8px;
+    padding: 10px;
     background-color: rgb(61, 60, 60);
 }
 
@@ -53,29 +51,32 @@ main {
 }
 
 .card {
-    border: 2px solid rgb(65, 61, 61);
+    border: 2px solid rgb(61, 60, 60);
     border-radius: 10px;
     margin: 15px;
-    padding: 10px;
+    padding: 0 0 10px;
 }
 
 .top {
     margin: 0;
     padding: 15px;
     flex: 1;
+    color: purple;
 }
 
 .top img {
     width: 150px;
     float: right;
-    margin: 5px 10px;
+    margin: 0 10px 10px;
+    padding: 5px;
 }
 
 .bottom {
     border-top: 1px solid rgb(65, 61, 61);
     padding: 10px;
-    margin: 15;
+    margin: 15px;
     flex: 1;
+    color: purple;
 }
 
 .bottom img {
@@ -85,22 +86,22 @@ main {
 }
 
 .card h3 {
-    margin: auto;
+    margin: 0;
+    padding: 8px;
     background-color: cornflowerblue;
     color: aliceblue;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     font-weight: bold;
     text-align: center;
-    /*margin: 0;*/
-    padding: auto;
 }
 
 .card a:hover {
-    color: red;
+    color: purple;
 }
 
 .footer {
-    /*grid-column: 1/3;
-    grid-row: 3/4;*/
     background-color: cornflowerblue;
     padding: 10px;
+    text-align: center;
 }
