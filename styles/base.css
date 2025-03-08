@@ -42,7 +42,7 @@ h2 {
 }
 
 nav a:hover {
-    color: green;
+    color: red;
 }
 
 main {
@@ -61,7 +61,7 @@ main {
     margin: 0;
     padding: 15px;
     flex: 1;
-    color: purple;
+    color: black;
 }
 
 .top img {
@@ -76,7 +76,7 @@ main {
     padding: 10px;
     margin: 15px;
     flex: 1;
-    color: purple;
+    color: black;
 }
 
 .bottom img {
