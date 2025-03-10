@@ -101,8 +101,9 @@ main {
 }
 
 .footer {
-    background-color: rgba(237, 235, 100, 0.928);
+    background-color:rgb(30, 100, 232);
     padding: 10px;
     text-align: center;
+    color: aliceblue;
 
 }
