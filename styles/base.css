@@ -1,7 +1,7 @@
 .header {
     margin: 0;
     padding: 0;
-    background-color: cornflowerblue;
+    background-color: rgb(30, 100, 232);
     text-align: center;
 }
 
@@ -88,7 +88,7 @@ main {
 .card h3 {
     margin: 0;
     padding: 8px;
-    background-color: cornflowerblue;
+    background-color: rgb(30, 100, 232);
     color: aliceblue;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -101,7 +101,7 @@ main {
 }
 
 .footer {
-    background-color: cornflowerblue;
+    background-color: rgb(30, 100, 232);
     padding: 10px;
     text-align: center;
 }
