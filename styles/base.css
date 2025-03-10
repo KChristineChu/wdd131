@@ -101,7 +101,8 @@ main {
 }
 
 .footer {
-    background-color: rgb(30, 100, 232);
+    background-color: rgba(237, 235, 100, 0.928);
     padding: 10px;
     text-align: center;
+
 }
