@@ -15,3 +15,19 @@ deleteButton.textContext = 'X';    //Populate the button textContent with a ❌.
 li.append(deleteButton);        //Append the li element variable with the delete button
 
 list.append(li);                //Append the li element variable to the unordered list in your HTML
+
+
+button.addEventListener('click', function () {
+    if (input.value.trim() !== '') {
+    
+    }                                          //trim-remove whitespace on both ends of string and return a new string.
+});
+
+deleteButton.addEventListener('click', function () {
+    list.removeChild(li);                //add event listener to delete button that removes li element when clicked
+    input.focus();
+});
+
+input.value = '';      //change the input value to nothing or empty string to clean up the interface for user
+
+input.focus();      //whether or not a list item was created, the focus(active cursor) should be sent to the input element
