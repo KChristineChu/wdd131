@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+    .header-nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}

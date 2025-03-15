@@ -1,82 +1,92 @@
 body {
     font-family: 'Roboto', sans-serif;
-}
 
-header {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    padding: 20px;
-    background-color: blueviolet;
-    color: azure;
-}
 
-.header-left {
-    width: 50%;
+    header {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding: 20px;
+        background-color: blueviolet;
+        color: azure;
+    }
 
-}
+    .header-left {
+        width: 50%;
 
-.header-left h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: left;
-}
+    }
 
-.header-nav {
-    width: 50%;
-    justify-content: space-evenly;
-    align-content: center;
+    .header-left h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        text-align: left;
+    }
 
-}
+    .header-nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-.header-nav a {
+    }
 
-    font-size: 1.5em;
-    color: azure;
-    /*border: 2px solid white;
+    .header-nav a {
+
+        font-size: 1.5em;
+        color: azure;
+        /*border: 2px solid white;
     border-radius: 10px;
     padding: 15px 20px;*/
-    text-align: center;
-}
+        text-align: center;
+    }
 
-.header-nav a:hover {
-    color: cyan
-}
+    .header-nav a:hover {
+        color: cyan
+    }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: antiquewhite;
-    margin-top: 0;
-}
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: antiquewhite;
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    }
 
-h1 {
-    display: block;
-    text-align: center;
-    padding: 15px;
-}
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
-img {
-    border: 5px solid rgb(218, 189, 74);
-}
+        max-width: 1000px;
+        /*display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1rem;*/
+    }
 
-figcaption {
-    color: darkblue;
-}
+    h2 {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    img {
+        width: 220px;
+        height: 190px;
+        border: 5px solid rgb(218, 189, 74);
+    }
+
+    figcaption {
+        color: darkblue;
+        text-align: center;
+    }
 
 
-footer {
-    background-color: blueviolet;
-    padding: 10px;
-    text-align: center;
-    color: aliceblue;
-
-}
+    footer {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: blueviolet;
+        padding: 10px;
+        text-align: center;
+        color: aliceblue;
+    }
