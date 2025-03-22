@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(242, 72, 11);
+    background-color: rgb(153, 43, 2);
     color: white;
     display: block;
     text-align: center;
@@ -71,7 +71,7 @@ h2 {
 }
 
 footer {
-    background-color: rgb(242, 72, 11);
+    background-color: rgb(153, 43, 2);
     color: white;
     padding: 1rem;
     text-align: center;
