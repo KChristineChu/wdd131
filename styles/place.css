@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', san serif;
+}
+
+header {
+    background-color: coral;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1.2rem;
+    border-bottom: 15px solid green;
+}
+ h1{
+    font-size: 2.5rem;
+ }
+main {
+    max-width: 1500px;
+
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data, 
+.weather {
+    background-color: rgb(232, 231, 229);
+    color: #000;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 10px;
+    text-align: center;
+}
+.data {
+    width: 220px;
+    height: 250px;
+    position: absolute;
+    top: 200px;
+}
+
+.weather {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 500px;
+    right: 10px;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(47, 157, 47);
+}
+
+footer {
+    background-color: coral;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
