@@ -1,0 +1,28 @@
+@media screen and (min-width: 701px) {
+    main {
+
+      .sunny-icon {
+        display: none;
+      }  
+    }
+    
+};
+    
+
+
+
+@media screen and (max-width: 700px) {
+    main {
+        session{
+            display: block;
+        }
+        
+        .icon {
+            display: none;
+        }
+
+    }
+
+}
+
+;

@@ -21,10 +21,10 @@
     </header>
 
     <main>
-        <div class="hero"
-            <picture>
-                <source srcset="images/hero1-large-webp.webp" media="(min-width: 1000px)">
-                <img src="images/hero1-medium-webp.webp" alt="Italy" width="500" height="700">
+        <div class="hero" <picture>
+            <source srcset="images/hero1-large.webp" media="(min-width: 701px)">
+            <source srcset="images/hero1-medium.webp" media="(max-width: 700px)">
+            <img src="images/hero1-large.webp" alt="Italy" width="800" height=auto">
             </picture>
 
             <session class="data">
@@ -40,7 +40,8 @@
             </session>
 
             <session class="weather">
-                <h2>Weather</h2>
+                <h2>Weather <span id="icon">☀️</span></h2>
+                <img src="images/sunny_weather_icon.svg" class="sunny-icon" alt="sunny icon">
                 <span class="label">Temperature: </span> <span class="value"></span><br>
                 <span class="label">Conditions: </span> <span class="value"></span><br>
                 <span class="label">Wind: </span> <span class="value"></span><br>
