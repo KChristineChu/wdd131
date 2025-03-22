@@ -1,28 +1,27 @@
-@media screen and (min-width: 701px) {
-    main {
-
-      .sunny-icon {
-        display: none;
-      }  
-    }
-    
-};
-    
-
-
-
 @media screen and (max-width: 700px) {
-    main {
-        session{
-            display: block;
-        }
-        
-        .icon {
-            display: none;
-        }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .data,
+    .weather {
+        position: static;
+        width: 100%;
+    }
+
+    .icon {
+        display: none;
     }
 
 }
 
-;
+/*@media screen and (min-width: 701px) {
+    main {
+
+        .sunny-icon {
+            display: none;
+        }
+    }
+*/

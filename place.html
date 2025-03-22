@@ -20,14 +20,16 @@
         <h1>Italy</h1>
     </header>
 
-    <main>
-        <div class="hero" <picture>
-            <source srcset="images/hero1-large.webp" media="(min-width: 701px)">
-            <source srcset="images/hero1-medium.webp" media="(max-width: 700px)">
-            <img src="images/hero1-large.webp" alt="Italy" width="800" height=auto">
+    <main class="container">
+
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero1-large.webp" media="(min-width: 701px)">
+                <source srcset="images/hero1-medium.webp" media="(max-width: 700px)">
+                <img src="images/hero1-large.webp" alt="Italy" width="800" height=auto">
             </picture>
 
-            <session class="data">
+            <aside class="data">
                 <h2>Data</h2>
                 <span class="label">Area: </span> <span class="value">116,350 sq mi</span><br>
                 <span class="label">Population: </span> <span class="value">58,947,05</span><br>
@@ -37,22 +39,22 @@
                 <span class="label">Time Zone: </span> <span class="value">UTC+1</span><br>
                 <span class="label">Calling Code: </span> <span class="value">+39</span><br>
                 <span class="label">Internet TLD: </span> <span class="value">.it</span>
-            </session>
+            </aside>
 
-            <session class="weather">
+            <aside class="weather">
                 <h2>Weather <span id="icon">☀️</span></h2>
-                <img src="images/sunny_weather_icon.svg" class="sunny-icon" alt="sunny icon">
-                <span class="label">Temperature: </span> <span class="value"></span><br>
-                <span class="label">Conditions: </span> <span class="value"></span><br>
-                <span class="label">Wind: </span> <span class="value"></span><br>
-                <span class="label">Windchill: </span> <span class="value"></span>
+                <!--<img src="images/sunny_weather_icon.svg" class="sunny-icon" alt="sunny icon" width="5" height="5">-->
+                <span class="label">Temperature: </span> <span class="value">57F°</span><br>
+                <span class="label">Conditions: </span> <span class="value">Sunny</span><br>
+                <span class="label">Wind: </span> <span class="value">5 mph</span><br>
+                <span class="label">Windchill: </span> <span id="windchill">N/A</span>
 
-            </session>
-        </div>
+            </aside>
+        </section>
     </main>
 
     <footer>
-        <p>©<span id="currently"></span>🌾Christine Chu🌾 Hong Kong</p>
+        <p>&copy<span id="currently"></span>🌾Christine Chu🌾 Hong Kong</p>
         <p><span id="lastModified"></span></p>
     </footer>
 </body>
