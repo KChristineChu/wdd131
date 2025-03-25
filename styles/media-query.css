@@ -11,8 +11,7 @@
         width: 96%;
         border-top: 3px solid var(--secondary-color);
         border-radius: 0;
-        margin-bottom: 30px;
-
+        align-content: center;
     }
 
     .icon::after {
