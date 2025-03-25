@@ -6,8 +6,6 @@
 }
 
 
-
-
 body {
     font-family: 'Roboto', san serif;
 }
@@ -66,9 +64,10 @@ h1 {
 
 h2 {
     display: block;
+    background-color: var(--secondary--color);
     text-align: center;
     padding: 5px;
-    background-color: var(--secondary--color);
+    
 }
 
 .label {

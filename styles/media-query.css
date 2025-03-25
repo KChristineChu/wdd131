@@ -9,7 +9,7 @@
     .weather {
         position: static;
         width: 96%;
-        border-top: 2px solid var(--secondary-color);
+        border-top: 3px solid var(--secondary-color);
         border-radius: 0;
 
     }
