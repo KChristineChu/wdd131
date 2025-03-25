@@ -8,21 +8,22 @@
     .data,
     .weather {
         position: static;
-        width: 100%;
-        
+        width: 96%;
+        border-top: 2px solid var(--secondary-color);
+        border-radius: 0;
+
     }
 
-    .icon {
+    .icon::after {
         display: none;
     }
 
-}
-
-/*@media screen and (min-width: 701px) {
-    main {
-
-        .sunny-icon {
-            display: none;
-        }
+    .sunny-icon {
+        width: 65px;
+        height: 65px;
+        display: block;
+        margin: 0 auto;
+      
     }
-*/
+
+}
