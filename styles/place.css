@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(186, 66, 23);
+    --primary-color: rgb(161, 50, 9);
     --secondary-color: green;
     --accent-color: gray;
     --background-color: rgb(232, 231, 229, 0.8);
@@ -67,7 +67,7 @@ h2 {
     background-color: var(--secondary--color);
     text-align: center;
     padding: 5px;
-    
+
 }
 
 .label {
