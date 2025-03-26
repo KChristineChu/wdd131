@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demo</title>
+    <meta name="description" content="WDD 131 - Lazy Load">
+    <meta name="author" content="Christine Chu">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazyload Demo</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="images/chair1.jpg" alt="Chair Image" loading="lazy" width="400" height="400">
+        </picture> 
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aut magnam amet, blanditiis expedita fugit soluta reiciendis ex esse doloribus earum totam laborum asperiores quis dicta laboriosam tempore, ratione tenetur.</p>
+        <picture>
+            <img src="images/chair2.jpg" alt="Chair Image" loading="lazy" width="400" height="400">
+        </picture>
+        <picture>
+            <img src="images/chair3.jpg" alt="Chair Image" loading="lazy" width="400" height="400">
+        </picture>
+        <picture>
+            <img src="images/chair4.jpg" alt="Chair Image" loading="lazy" width="400" height="400">    
+        </picture>
+        <picture>
+            <img src="images/chair5.jpg" alt="Chair Image" loading="lazy" width="400" height="400">    
+        </picture>
+        <picture>
+            <img src="images/chair6.jpg" alt="Chair Image" loading="lazy" width="400" height="400"> 
+        </picture>
+        
+        
+    </main>
+    <footer>
+        <p>©<span id="currently"></span> Christine Chu 🪑| WDD 131</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
