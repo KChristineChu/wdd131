@@ -70,11 +70,61 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-
-
-
-
-
+    {
+        templeName: "Laie Hawaii",
+        location: "Laie, Hawaii, United States",
+        dedicated: "1919, November, 27",
+        area: 42100,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370.jpg"
+            
+    },
+    {
+        templeName: "St. Louis Missouri",
+        location: "St. Louis, Missouri, United States",
+        dedicated: "1997, June 1",
+        area: 58749,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/st.-louis-missouri-temple/st.-louis-missouri-temple-5449.jpg"
+            
+    },
+    {
+        templeName: "Paris France",
+        location: "Paris, France",
+        dedicated: "2017, May 21",
+        area: 44175,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-5018.jpg"
+    },    
     
 ];
 
+createTempleCard();
+
+function createTempleCard() {
+    temples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Area:</span> ${temple.area}`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".container").appendChild(card);
+
+    });    
+    }
