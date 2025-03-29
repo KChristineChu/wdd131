@@ -29,13 +29,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}    
+}
 
 #menu {
 
-    font-size: 2em;
+    font-size: 2rem;
     color: azure;
-
     text-align: center;
 }
 
