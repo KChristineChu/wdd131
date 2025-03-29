@@ -127,4 +127,12 @@ function createTempleCard() {
         document.querySelector(".container").appendChild(card);
 
     });    
-    }
+}
+ 
+
+
+
+
+    
+
+    
