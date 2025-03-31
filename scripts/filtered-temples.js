@@ -99,36 +99,6 @@ const temples = [
 
 ];
 
-/*createTempleCard();
-
-function createTempleCard() {
-    temples.forEach(temple => {
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let location = document.createElement("p");
-        let dedication = document.createElement("p");
-        let area = document.createElement("p");
-        let img = document.createElement("img");
-
-        name.textContent = temple.templeName;
-        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label">Area:</span> ${temple.area}`;
-        img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("loading", "lazy");
-
-        card.appendChild(name);
-        card.appendChild(location);
-        card.appendChild(dedication);
-        card.appendChild(area);
-        card.appendChild(img);
-
-        document.querySelector(".container").appendChild(card);
-
-    });
-}
-*/
 
 function createTempleCard(temples) {
     document.querySelector(".container").innerHTML = "";
@@ -190,6 +160,5 @@ document.querySelector("#old").addEventListener("click", oldTemples);
 document.querySelector("#new").addEventListener("click", newTemples);
 document.querySelector("#large").addEventListener("click", largeTemples);
 document.querySelector("#small").addEventListener("click", smallTemples);
-
 
 allTemples();
