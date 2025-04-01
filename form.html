@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fill in Form" <meta name="author" content="Christine Chu" <title>WDD 131 Form
+    </title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <form method="get" action="review.html">
+            <fieldset>
+                <div>Product name</div>
+                <select name="Subject">
+                    <option value="">Choose a Product...</optio>
+                    <option value="washer">Washer</option>
+                    <option value="dryer">Dryer</option>
+                    <option value="oven">Oven</option>
+                    <option value="refrigerator">Refrigerator</option>
+                    <option value="freezer">Freezer</option>
+                </select>
+
+                <div>Overall Rating</div>
+                <label>&star;<input type="radio" name="rating" value="onestar"></label>
+                <label>&star; &star;<input type="radio" name="rating" value="twostar"></label>
+                <label>&star; &star; &star;<input type="radio" name="rating" value="threestar"></label>
+                <label>&star; &star; &star; &star;<input type="radio" name="rating" value="fourstar"></label>
+                <label>&star; &star; &star; &star; &star;<input type="radio" name="rating" value="fivestar"></label>
+
+                <div>Date of Installation</div>
+                <input type="date" name="completeDate">
+
+                <div>Which features did you find useful in the product?</div>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+
+                <div>Written Review (optional)</div>
+                <label><input type="text" name="text" </label>
+
+                    <div>Your Name (optional)</div>
+                    <label><input type="text" name="name" </label>
+
+                        <input type="submit" value="Post Review" </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currently"></span>🌾Christine Chu🌾 Hong Kong</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
