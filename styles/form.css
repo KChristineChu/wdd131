@@ -1,0 +1,74 @@
+body {
+    font-size: .8rem;
+}
+
+header,
+footer {
+    margin: 0;
+    background-color: rgb(54, 37, 67);
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size:1.2rem;
+}
+
+fieldset {
+    margin:.5rem 0 .5rem 0;
+    background-color: rgb(209, 200, 216);
+    border: 0;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;;
+}
+
+.wf1 select,
+.wf1 input[type="radio"],
+.wf1 input[type="date"],
+.wf1 input[type="checkbox"],
+.wf1 input[type="text"],
+.wf1 input[type="textarea"] {
+    margin: .5rem;
+}
+
+.wf1 input[type="radio"]{
+    display: inline-block;
+}
+
+
+.wf1 select,
+.wf1 input[type="date"],
+.wf1 input[type="text"],
+.wf1 input[type="textarea"] {
+    display: block;
+    margin-left: 0;
+    border: none;
+    background-color: white;
+    padding: .75rem;
+    width: 100%;
+    max-width: 260px;
+   
+    /*appearance: none;*/    
+        
+}
+
+.wf1 input[type="textarea"]{
+    height: 3rem;
+}
+
+
+label {
+    display: block; 
+    
+}
+
+.wf1 input[type="submit"] {
+    width: 100%;
+    max-width: 285px;
+    padding: .6rem;
+    font-weight: bold;
+}

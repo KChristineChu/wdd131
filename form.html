@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fill in Form" <meta name="author" content="Christine Chu" <title>WDD 131 Form
     </title>
-
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <header>
             <h1>Product Review</h1>
         </header>
-        <form method="get" action="review.html">
+        <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <div>Product name</div>
                 <select name="Subject">
@@ -33,8 +33,8 @@
                 <label>&star; &star; &star; &star;<input type="radio" name="rating" value="fourstar"></label>
                 <label>&star; &star; &star; &star; &star;<input type="radio" name="rating" value="fivestar"></label>
 
-                <div>Date of Installation</div>
-                <input type="date" name="completeDate">
+                <label>Date of Installation
+                <input type="date" name="completeDate"></label>
 
                 <div>Which features did you find useful in the product?</div>
                 <div>(Check all that apply)</div>
@@ -43,13 +43,12 @@
                 <label><input type="checkbox" name="performance" value="yes">Performance</label>
                 <label><input type="checkbox" name="design" value="yes">Design</label>
 
-                <div>Written Review (optional)</div>
-                <label><input type="text" name="text" </label>
+                <label>Written Review (optional)<input type="textarea" name="textarea"></label>
 
-                    <div>Your Name (optional)</div>
-                    <label><input type="text" name="name" </label>
+                <label>Your Name (optional)<input type="text" name="name"></label>
 
-                        <input type="submit" value="Post Review" </fieldset>
+                <label><input type="submit" value="Post Review"></label>
+            </fieldset>
         </form>
     </main>
     <footer>
