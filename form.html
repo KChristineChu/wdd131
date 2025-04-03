@@ -16,36 +16,37 @@
         </header>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <div>Product name</div>
-                <select name="Subject">
+                <div>Product name*</div>
+                <select id="product" name="product" required>
                     <option value="">Choose a Product...</optio>
-                    <option value="washer">Washer</option>
-                    <option value="dryer">Dryer</option>
-                    <option value="oven">Oven</option>
-                    <option value="refrigerator">Refrigerator</option>
-                    <option value="freezer">Freezer</option>
+                    <option value="flux capacitor">Flux Capacitor</option>
+                    <option value="power laces">Power Laces</option>
+                    <option value="time circuits">Time Circuits</option>
+                    <option value="low voltage reactor">Low Voltage Reactor</option>
+                    <option value="warp equalizer">Warp Equalizer</option>
                 </select>
 
                 <div>Overall Rating</div>
-                <label>&star;<input type="radio" name="rating" value="onestar"></label>
-                <label>&star; &star;<input type="radio" name="rating" value="twostar"></label>
-                <label>&star; &star; &star;<input type="radio" name="rating" value="threestar"></label>
-                <label>&star; &star; &star; &star;<input type="radio" name="rating" value="fourstar"></label>
-                <label>&star; &star; &star; &star; &star;<input type="radio" name="rating" value="fivestar"></label>
+                <label><input type="radio" id="1star" name="rating" value="onestar">&star;</label>
+                <label><input type="radio" id="2star" name="rating" value="twostar">&star; &star;</label>
+                <label><input type="radio" id="3star" name="rating" value="threestar">&star; &star; &star;</label>
+                <label><input type="radio" id="4star" name="rating" value="fourstar">&star; &star; &star; &star;</label>
+                <label><input type="radio" id="5star" name="rating" value="fivestar">&star; &star; &star; &star;
+                    &star;</label>
 
                 <label>Date of Installation
-                <input type="date" name="completeDate"></label>
+                    <input type="date" name="completeDate"></label>
 
                 <div>Which features did you find useful in the product?</div>
                 <div>(Check all that apply)</div>
-                <label><input type="checkbox" name="durability" value="yes">Durability</label>
-                <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
-                <label><input type="checkbox" name="performance" value="yes">Performance</label>
-                <label><input type="checkbox" name="design" value="yes">Design</label>
+                <label><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
 
-                <label>Written Review (optional)<input type="textarea" name="textarea"></label>
+                <label>Written Review (optional)<input type="textarea" id="review" name="textarea"></label>
 
-                <label>Your Name (optional)<input type="text" name="name"></label>
+                <label>Your Name (optional)<input type="text" id="name" name="name"></label>
 
                 <label><input type="submit" value="Post Review"></label>
             </fieldset>

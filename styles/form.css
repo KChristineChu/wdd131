@@ -1,5 +1,5 @@
 body {
-    
+
     font-size: .8rem;
 }
 
@@ -16,16 +16,17 @@ footer {
 }
 
 header h1 {
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 fieldset {
-    margin:.5rem 0 .5rem 0;
+    margin: .5rem 0 .5rem 0;
     background-color: rgb(209, 200, 216);
     border: 0;
     border-radius: 3px;
     width: 96%;
-    max-width: 296px;;
+    max-width: 296px;
+    ;
 }
 
 .wf1 select,
@@ -36,14 +37,14 @@ fieldset {
 .wf1 input[type="textarea"] {
     margin: .5rem;
     margin-bottom: .8rem;
-    
+
 }
 
 .wf1 div {
     padding-top: .6rem;
 }
 
-.wf1 input[type="radio"]{
+.wf1 input[type="radio"] {
     display: inline-block;
     margin-bottom: .8rem;
 }
@@ -54,26 +55,31 @@ fieldset {
 .wf1 input[type="text"],
 .wf1 input[type="textarea"] {
     display: block;
-    margin: 0 0 .7rem 0;
+    margin: .1rem 0 .7rem 0;
     border: none;
     background-color: white;
     padding: .75rem;
     width: 100%;
     max-width: 260px;
-   
-    /*appearance: none;*/    
-        
+
+    /*appearance: none;*/
+
 }
 
-.wf1 input[type="textarea"]{
+.wf1 select:invalid {
+    border-left: 6px solid red;
+}
+
+
+.wf1 input[type="textarea"] {
     height: 3rem;
-   
+
 }
 
 label {
-    display: block; 
-    
-    
+    display: block;
+
+
 }
 
 .wf1 input[type="submit"] {
@@ -82,7 +88,8 @@ label {
     padding: .7rem;
     font-weight: bold;
 }
-.wf1 input[type="submit"]:hover{
+
+.wf1 input[type="submit"]:hover {
     background-color: darkgray;
     border-color: rgb(54, 37, 67);
     color: white;
