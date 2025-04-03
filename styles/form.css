@@ -70,6 +70,13 @@ fieldset {
     border-left: 6px solid red;
 }
 
+.wf1 input[type=date]:required {
+    border-left: 6px solid red;
+}
+
+.wf1 input[type=date]:required:valid {
+    border-left: none;
+}
 
 .wf1 input[type="textarea"] {
     height: 3rem;
