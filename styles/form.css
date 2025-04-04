@@ -33,13 +33,13 @@ fieldset {
 .wf1 input[type="radio"],
 .wf1 input[type="date"],
 .wf1 input[type="checkbox"],
-.wf1 input[type="text"],
-.wf1 input[type="textarea"] {
+.wf1 input[type="text"] {
     margin: .5rem;
     margin-bottom: .8rem;
 
 }
 
+/*.wf1 input[type="textarea"]*/
 .wf1 div {
     padding-top: .6rem;
 }
@@ -78,8 +78,11 @@ fieldset {
     border-left: none;
 }
 
-.wf1 input[type="textarea"] {
+.wf1 #review {
+    border: none;
     height: 3rem;
+    width: 100%;
+    max-width: 260px;
 
 }
 
