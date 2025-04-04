@@ -34,3 +34,25 @@ const products = [
 ];
 
 
+let count = Number(localStorage.getItem("reviewCount")) || 0;
+count++;
+localStorage.setItem("reviewCount", count);
+document.querySelector(".reviewCount").textContent = count;
+
+
+
+/*const count = document.querySelector(".reviewCount");
+let numreviews = Number(localStorage.getItem("reviewCount-ls"));
+
+if (numreviews !== 0) {
+    count.textContent = numreviews;
+} else {
+    count.textContent = `Thank you for your review.`;
+}
+numreviews++;
+localStorage.setItem("reviews-ls", numreviews);
+*/
+
+
+
+
