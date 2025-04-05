@@ -1,0 +1,25 @@
+:root {
+    --primary-color: rgb(73, 210, 121);
+    --secondary-color: rgb(249, 205, 44);
+    --accent-color1: rgb(155, 75, 75);
+    --accent-color2: gray;
+    --background-color: rgba(249, 243, 230, 0.8);
+}
+
+body {
+    font-family: 'Roboto', san serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+
+}
+
+main {
+    background-color: var(--background-color);
+    padding: 1rem;
+
+
+}
