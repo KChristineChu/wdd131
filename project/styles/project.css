@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', san serif;
+    max-width: 100%;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
 
 .branding {
     display: flex;
+
     align-items: center;
     padding: .5rem;
     gap: 1rem;
@@ -28,23 +30,88 @@ h1 {
     font-size: 2.5rem;
 }
 
-.nav-links {
+
+
+
+
+/*.navigation {
+    list-style: none;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+
 }
 
-.nav-links a {
+
+
+.navigation a {
+    display: flex;
     font-weight: bold;
+    text-decoration: none;
     font-size: 1.1rem;
+    color: black;
 }
 
-.nav-links a:hover {
-    border: 1px solid black;
+.navigation a:hover {
+    border: 1px solid var(--accent-color1);
     border-radius: 5px;
     padding: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+
+}*/
+
+@media screen and (max-width: 700px) {
+    #menu {
+        display: block;
+        /*justify-content: space-evenly;*/
+        font-size: 2rem;
+        font-weight: 700;
+        padding: .5rem .75rem;
+    }
+
+    #menu::before {
+        content: "≡";
+        
+
+        /*color: black;*/
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: .75rem;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .navigation a:hover,
+    .navigation a:active {
+        color: white;
+
+    }
+
+    .navigation.show li {
+        display: block;
+    }
 
 
 }
@@ -58,5 +125,5 @@ main {
 
 footer {
     background-color: var(--primary-color);
-    padding:1rem;
+    padding: 1rem;
 }
