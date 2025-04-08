@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Roboto', san serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 100%;
 }
 
@@ -73,7 +73,7 @@ h1 {
 
     #menu::before {
         content: "≡";
-        
+
 
         /*color: black;*/
     }
