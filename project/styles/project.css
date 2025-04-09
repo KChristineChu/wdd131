@@ -9,13 +9,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color);
-    padding: .5rem 1rem;
+    padding: .4rem 1rem;
 }
 
 .branding {
@@ -27,12 +28,48 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.intro, .map {
+    background-color: var(--background-color);
+    /*border: 1px solid var(--accent-color1);*/
+    /*border-radius: 1em;*/
+    padding: 10px;
+    text-align: center;
+    }
+
+.intro {
+    width: 190px;
+    height: 230px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    font-size: 1.2rem;
+    
+}
+ .map {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 500px;
+    right: 20px;
+ }
 
 
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /*.navigation {
     list-style: none;
@@ -62,59 +99,39 @@ h1 {
 
 }*/
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px) {
     #menu {
-        display: block;
-        /*justify-content: space-evenly;*/
-        font-size: 2rem;
-        font-weight: 700;
-        padding: .5rem .75rem;
-    }
-
-    #menu::before {
-        content: "≡";
-
-
-        /*color: black;*/
-    }
-
-    #menu.show::before {
-        content: "X";
+        display: none;
     }
 
     .navigation {
-        list-style: none;
-        margin: 0 auto;
-        max-width: 700px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         padding: 0;
+        margin: 0;
+
     }
 
     .navigation li {
-        display: none;
+        display: block;
+        flex: 1 1 auto;
+        list-style: none;
+
     }
 
     .navigation a {
         display: block;
-        padding: .75rem;
-        text-align: left;
+        text-align: center;
+        padding: 1rem;
         text-decoration: none;
-        font-weight: 700;
         color: black;
         font-size: 1.5rem;
-    }
-
-    .navigation a:hover,
-    .navigation a:active {
-        color: white;
 
     }
-
-    .navigation.show li {
-        display: block;
-    }
-
 
 }
+
 
 main {
     background-color: var(--background-color);
