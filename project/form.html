@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,22 +8,95 @@
     <meta name="description" content="Christine Chu, WDD131, Form">
     <meta name="author" content="Christine Chu">
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <script src="scripts/project.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
 </head>
-    <header>
-        <div class="branding">
-            <img src="images/project-logo.jpg" alt="project-logo" width="100" height="auto">
-            <h1>Europe Travels</h1>
-        </div>
-    
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">All Trips</a>
-            <a href="#">Contact Us</a>
-    
-        </nav>
-    
-    </header>
+
+
+<header>
+    <div class="branding">
+        <img src="images/project-logo.jpg" alt="project-logo" width="100" height="auto">
+        <h1>Europe Travels</h1>
+    </div>
+
+
+    <nav>
+        <a id="menu" href="#" aria-label="Menu"></a>
+        <ul class="navigation">
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="trips.html" id="allTours" aria-label="All Trips">All Trips</a></li>
+            <li><a href="form.html" aria-label="Contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <div class="container2">
+        <h2 class="signup">Sign Up Form</h2>
+        <form method="get" action="signup.html" class="wf1">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="1234441234"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <div>Europe Tours*</div>
+                <select id="tour" name="tour" required>
+                    <option value="">Choose a Tour...</option>
+                    <option value="great britain">Great Britain</option>
+                    <option value="france">France</option>
+                    <option value="greece">Greece</option>
+                    <option value="germany">Germany</option>
+                    <option value="ireland">Ireland</option>
+                    <option value="italy">Italy</option>
+                    <option value="belgium">Belgium</option>
+                    <option value="spain">Spain</option>
+                    <option value="switzerland">Switzerland</option>
+                </select>
+
+
+                <div>Tour Dates*</div>
+                <label>Date of Tours*
+                    <input type="date" id="date" name="tourDate" required></label>
+
+                <!--<div>Overall Rating</div>
+        <label><input type="radio" id="1star" name="rating" value="onestar">&star;</label>
+        <label><input type="radio" id="2star" name="rating" value="twostar">&star; &star;</label>
+        <label><input type="radio" id="3star" name="rating" value="threestar">&star; &star; &star;</label>
+        <label><input type="radio" id="4star" name="rating" value="fourstar">&star; &star; &star; &star;</label>
+        <label><input type="radio" id="5star" name="rating" value="fivestar">&star; &star; &star; &star;
+            &star;</label>
+
+        <label>Date of Installation*
+            <input type="date" id="date" name="completeDate" required></label>-->
+
+                <div>Which features would you be interested ?</div>
+                <div>(Check all that apply)</div>
+                <label><input type="checkbox" id="self-guided" name="features" value="yes">Self-guided Tours</label>
+                <label><input type="checkbox" id="guided" name="features" value="yes">Guided Tours</label>
+                <label><input type="checkbox" id="multi-countries" name="features" value="yes">Multi-Country
+                    Tours</label>
+                <label><input type="checkbox" id="discounted" name="features" value="yes">Discounted Tours</label>
+
+                <label>Questions (optional)<textarea id="questions" name="questions"></textarea></label>
+
+
+                <label><input type="submit" value="Post"></label>
+            </fieldset>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>©<span id="currently"></span>🏵️Christine Chu🏵️</p>
+    <p><span id="lastModified"></span></p>
+</footer>
+</body>

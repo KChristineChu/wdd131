@@ -81,8 +81,8 @@ function createTourCard(tours) {
         let numberOfDays = document.createElement("p");
         let image = document.createElement("img");
 
-        location.innerHTML = `<span class="label">Location:</span> ${tour.location}`;
-        numberOfDays.innerHTML = `<span class="label">Number of Days</span>${tour.numberOfDays}`;
+        location.innerHTML = `<span class="label">Location: </span> ${tour.location}`;
+        numberOfDays.innerHTML = `<span class="label">Number of Days: </span>${tour.numberOfDays}`;
         image.classList.add("tour-img");
         image.setAttribute("src", tour.image);
         image.setAttribute("alt", `${tour.location}`);

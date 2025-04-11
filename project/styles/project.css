@@ -114,16 +114,103 @@ section {
 
 }
 
-/*.card img,
-.tour-img {
-    width: 220px;
-    height: 190px;
-}*/
+.signup {
+    display: block;
+}
+
+fieldset {
+    margin: .5rem 0 .5rem 0;
+
+    border: 0;
+    border-radius: 3px;
+    width: 96%;
+    max-width: 296px;
+    ;
+}
+
+.wf1 select,
+.wf1 input[type="radio"],
+.wf1 input[type="date"],
+.wf1 input[type="checkbox"],
+.wf1 input[type="text"] {
+    margin: .5rem;
+    margin-bottom: .8rem;
+
+}
+
+.wf1 div {
+    padding-top: .6rem;
+}
+
+.wf1 select,
+.wf1 input[type="date"],
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="textarea"] {
+    display: block;
+    margin: .1rem 0 .7rem 0;
+    border: none;
+    background-color: white;
+    padding: .75rem;
+    width: 100%;
+    max-width: 260px;
+
+}
+
+.wf1 select:invalid {
+    border-left: 6px solid red;
+}
+
+.wf1 input[type=date]:required {
+    border-left: 6px solid red;
+}
+
+.wf1 input[type=date]:required:valid {
+    border-left: none;
+}
+
+.wf1 input[type=text]:required {
+    border-left: 6px solid red;
+}
+
+.wf1 input[type=text]:required:valid {
+    border-left: none;
+}
+
+
+
+.wf1 #questions {
+    border: none;
+    height: 3rem;
+    width: 100%;
+    max-width: 280px;
+}
+
+label {
+    display: block;
+}
+
+.wf1 input[type="submit"] {
+    width: 100%;
+    max-width: 285px;
+    padding: .7rem;
+    font-weight: bold;
+    margin-top: .75rem;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: darkgray;
+    border-color: var(--accent-color1);
+    border-radius: 3px;
+    color: white;
+}
 
 @media screen and (min-width: 701px) {
     #menu {
         display: none;
     }
+
 
     .navigation {
         display: flex;
