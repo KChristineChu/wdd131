@@ -16,23 +16,36 @@
 
 </head>
 
-
-<header>
-    <div class="branding">
-        <img src="images/project-logo.jpg" alt="project-logo" width="100" height="auto">
-        <h1>Europe Travels</h1>
-    </div>
-</header>
-
 <body>
-    <main>
-        
+    <header>
+        <div class="branding">
+            <img src="images/project-logo.jpg" alt="project-logo" width="100" height="auto">
+            <h1>Europe Travels</h1>
+        </div>
+
+        <nav>
+            <a id="menu" href="#" aria-label="Menu"></a>
+            <ul class="navigation">
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="trips.html" id="allTours" aria-label="All Trips">All Trips</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main>        
         <h1>Sign Up</h1>
         
         <div class="container">
-            <p>Thank you for signing up for our Europe Tours.</p>
+            <p>Thank you for signing up to our Europe Tours!</p>
             <p>We will contact you shortly.</p>
-            <!--<p>Total Reviews: <span class="reviewCount">0</span></p>-->
+            <p>Total Signups: <span class="signUpCount">0</span></p>
         </div>
     </main>
+
+    <footer>
+        <p>©<span id="currently"></span>🏵️Christine Chu🏵️</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
+</html>

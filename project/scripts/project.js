@@ -15,7 +15,6 @@ document.getElementById("currently").textContent = myYear;
 document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
 
 //Array of tours
-
 const tours = [
     {
         location: "Great Britain",
@@ -115,3 +114,9 @@ document.querySelector("#allTours").addEventListener("click", allTours);
 document.querySelector("#shortTours").addEventListener("click", shortTours);
 document.querySelector("#longTours").addEventListener("click", longTours);
 allTours();
+
+//local storage
+let count = Number(localStorage.getItem("reviewCount")) || 0;
+count++;
+localStorage.setItem("signUpCount", count);
+document.querySelector(".signUpCount").textContent = count;
