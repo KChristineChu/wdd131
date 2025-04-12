@@ -59,7 +59,7 @@
     .map {
         position: static;
         width: 96%;
-        border-top: 3px solid var(--secondary-color);
+        border: 1px solid var(--accent-color1);
         border-radius: 0;
         align-content: center;
     }
