@@ -1,67 +1,97 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #222;
 }
 
 header {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 0;
     padding: 20px;
     background-color: blueviolet;
     color: azure;
 }
 
-.header-left {
-    width: 50%;
-
-}
-
 .header-left h1 {
     font-size: 2.5em;
-    font-weight: bold;
-    text-align: left;
+    margin: 0;
 }
 
-.header-nav {
-    width: 50%;
+@media only screen and (max-width: 650px) {
+    #menu {
+        display: block;        
+        cursor: pointer;
+        background: none;   /*remove default button background*/
+        border: none;       /*remove border (the square around 'X' and '≣')*/
+
+    }
+    
+    .navigation {
+
+        display: none;
+
+    }
+
+    .navigation.show {
+        display: block;
+    }
+
+    #menu::before {
+        content: '≣';
+        font-size: 2.2rem;  /*font-size works for changing symbol's size. No need to set an id or class*/
+        color: white;
+    }
+
+    #menu.show::before {
+        content: 'X';
+        font-size: 2.2rem;
+        color: white;
+        
+    }
+        
+}
+
+.navigation ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.header-nav a {
+.navigation li {
+    margin: 0;
+}
 
+.navigation a {
+    display: block;
     font-size: 1.5em;
     color: azure;
-    /*border: 2px solid white;
-    border-radius: 10px;
-    padding: 15px 20px;*/
-    text-align: center;
+    text-decoration: none;
 }
 
-.header-nav a:hover {
-    color: cyan
+.navigation a:hover {
+    background-color: white;
+    color: indigo;
 }
 
 main {
     max-width: 1000px;
     margin: 0 auto;
-    /*background-color: antiquewhite;*/
-
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    max-width: 1000px;
-    /*display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 1rem;*/
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 h2 {
@@ -81,9 +111,8 @@ figcaption {
     text-align: center;
 }
 
-
 footer {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     background-color: blueviolet;
     padding: 10px;
